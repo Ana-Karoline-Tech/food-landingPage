@@ -11,10 +11,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="src/styles/styles.css" />
-    <link rel="stylesheet" href="src/styles/header.css" />
-    <link rel="stylesheet" href="src/styles/home.css" />
-    <link rel="stylesheet" href="src/styles/menu.css" />
-    <link rel="stylesheet" href="src/styles/testimonials.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -22,6 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Landing Page</title>
   </head>
   <body>
@@ -72,8 +70,10 @@
           <h1 class="title">O sabor que vai até <span>você</span></h1>
 
           <p class="description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-            repellat quidem voluptates ipsam !
+            Saboreie refeições frescas e nutritivas preparadas com ingredientes
+            selecionados. Nosso compromisso é entregar qualidade e sabor
+            diretamente na sua porta, para momentos de prazer à mesa sem
+            complicações.
           </p>
 
           <div id="cta_buttons">
@@ -113,10 +113,12 @@
 
             <img src="src/images/dish.png" class="dish-image" alt="" />
 
-            <h3 class="dish-title">Lorem Ipsum</h3>
+            <h3 class="dish-title">Tigela Oriental</h3>
 
             <span class="dish-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Combinação aromática de frango salteado com legumes frescos,
+              brotos e molho especial da casa, servida sobre uma base de arroz
+              ou macarrão oriental.
             </span>
 
             <div class="dish-rate">
@@ -129,7 +131,7 @@
             </div>
 
             <div class="dish-price">
-              <h4>R$20,00</h4>
+              <h4>R$32,90</h4>
               <button class="btn-default">
                 <i class="fa-solid fa-basket-shopping"></i>
               </button>
@@ -143,10 +145,12 @@
 
             <img src="src/images/dish2.png" class="dish-image" alt="" />
 
-            <h3 class="dish-title">Lorem Ipsum</h3>
+            <h3 class="dish-title">Misto Quente Gourmet</h3>
 
             <span class="dish-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Sanduíche grelhado à perfeição com blend de queijos premium,
+              presunto selecionado e nosso molho secreto, servido em pão
+              artesanal crocante.
             </span>
 
             <div class="dish-rate">
@@ -159,7 +163,7 @@
             </div>
 
             <div class="dish-price">
-              <h4>R$20,00</h4>
+              <h4>R$24,50</h4>
               <button class="btn-default">
                 <i class="fa-solid fa-basket-shopping"></i>
               </button>
@@ -173,10 +177,12 @@
 
             <img src="src/images/dish3.png" class="dish-image" alt="" />
 
-            <h3 class="dish-title">Lorem Ipsum</h3>
+            <h3 class="dish-title">Açaí Bowl Premium</h3>
 
             <span class="dish-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cremoso açaí batido na hora, coberto com granola artesanal,
+              morangos frescos, kiwi, banana e mel orgânico para uma experiência
+              refrescante e nutritiva.
             </span>
 
             <div class="dish-rate">
@@ -189,7 +195,7 @@
             </div>
 
             <div class="dish-price">
-              <h4>R$20,00</h4>
+              <h4>R$28,90</h4>
               <button class="btn-default">
                 <i class="fa-solid fa-basket-shopping"></i>
               </button>
@@ -203,10 +209,12 @@
 
             <img src="src/images/dish4.png" class="dish-image" alt="" />
 
-            <h3 class="dish-title">Lorem Ipsum</h3>
+            <h3 class="dish-title">Camarão ao Alho e Óleo</h3>
 
             <span class="dish-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Camarões suculentos salteados em azeite extra virgem com alho
+              dourado, pimenta e ervas frescas, acompanhado de verduras da
+              estação.
             </span>
 
             <div class="dish-rate">
@@ -219,7 +227,7 @@
             </div>
 
             <div class="dish-price">
-              <h4>R$20,00</h4>
+              <h4>R$45,90</h4>
               <button class="btn-default">
                 <i class="fa-solid fa-basket-shopping"></i>
               </button>
@@ -229,7 +237,7 @@
       </section>
 
       <section id="testimonials">
-        <img src="src/images/chef.png" alt="" />
+        <img src="src/images/chef.png" id="testimonial_chef" alt="" />
 
         <div id="testimonials_content">
           <h2 class="section-subtitle">Depoimentos</h2>
@@ -239,7 +247,7 @@
               <img src="src/images/avatar.png" class="feedback-avatar" alt="" />
 
               <div class="feedback-content">
-                <p>
+                <p class="client-name">
                   Maria Rosa
 
                   <span>
@@ -251,10 +259,10 @@
                   </span>
                 </p>
                 <p>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dicta, eos omnis soluta maxime numquam molestias aut alias eum
-                  eligendi, iste laudantium in et debitis hic tempore. Eum
-                  aliquam inventore ex."
+                  "Comida simplesmente deliciosa! Pedi pelo delivery e chegou
+                  rápido e ainda quentinho. Os bowls são generosos e com
+                  ingredientes fresquíssimos. Com certeza virei cliente fiel.
+                  Parabéns pelo atendimento impecável também!"
                 </p>
               </div>
             </div>
@@ -267,7 +275,7 @@
               />
 
               <div class="feedback-content">
-                <p>
+                <p class="client-name">
                   Peter Jonhsom
 
                   <span>
@@ -279,10 +287,39 @@
                   </span>
                 </p>
                 <p>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dicta, eos omnis soluta maxime numquam molestias aut alias eum
-                  eligendi, iste laudantium in et debitis hic tempore. Eum
-                  aliquam inventore ex."
+                  "Experimentei o bowl de proteína e fiquei impressionado com o
+                  sabor. Tudo muito bem temperado e equilibrado. Além disso, o
+                  app é super intuitivo e o tempo de entrega foi exato como o
+                  prometido. Recomendo para quem busca alimentação saudável sem
+                  abrir mão do sabor!"
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img
+                src="src/images/cliente-Anaaa.jpg"
+                class="feedback-avatar"
+                alt=""
+              />
+
+              <div class="feedback-content">
+                <p class="client-name">
+                  Amanda Oliveira
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "A relação custo-benefício é excelente! Comida saborosa,
+                  saudável e que realmente satisfaz. Já experimentei quase todos
+                  os pratos do cardápio e nunca me decepcionei. O atendimento ao
+                  cliente também merece 5 estrelas!"
                 </p>
               </div>
             </div>
@@ -292,6 +329,28 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <img src="src/images/wave.svg" alt="" />
+
+      <div id="footer_items">
+        <span id="copyright"> &copy 2025 ❤️Ana Karoline Ribeiro❤️ </span>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="src/javascript/script.js"></script>
   </body>

@@ -94,7 +94,13 @@
 }
 
 @media screen and (max-width: 450px) {
-  #phine_button button {
+  #phone_button button {
     display: none;
   }
 }
+
+/* @media screen and (max-width: 361px) {
+  #phone_button button {
+    width: 50px;
+  }
+} */
